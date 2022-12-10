@@ -16,8 +16,11 @@ public class LoginPage extends CommonMethods {
     @FindBy(xpath="//input[@id='btnLogin']")
     public WebElement loginButton;
 
+    @FindBy(xpath="//*[@id='spanMessage']")
+    public WebElement errorMessage;
 
-    public LoginPage(){
+
+    public LoginPage(){   //Create constructor for this class to be able to recall it from another class
         //call selenium page factory
         PageFactory.initElements(driver, this);
     }

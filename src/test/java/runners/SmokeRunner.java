@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 
      //dryRun = false  : it starts execution again
         dryRun = false,
-        tags = "@tc1103",
+        tags = "@outline",
 
     //to remove irrelavant information from console, you need to set monochrome to true
         monochrome = true,
