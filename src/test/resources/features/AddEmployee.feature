@@ -41,4 +41,4 @@ Feature: Add Employee
 
   @excel
   Scenario: Adding multiple employees using excel file
-    When user adds multiple employee from excel using "EmployeeData" and verify it
+    When user adds multiple employee from excel using "EmpData" and verify it
