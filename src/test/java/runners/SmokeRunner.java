@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 
      //dryRun = false  : it starts execution again
         dryRun = false,
-        tags = "@excel",
+        tags = " @tc1103",
 
     //to remove irrelavant information from console, you need to set monochrome to true
         monochrome = true,
@@ -24,7 +24,9 @@ import org.junit.runner.RunWith;
      //To generate the reports we need plugin of runner class
         //cucumber.html => name of the report
         //json => one kind of report
-    plugin = {"pretty","html:target/cucumber.html","json:target/cucumber.json"}
+    plugin = {"pretty","html:target/cucumber.html","json:target/cucumber.json",
+            //this failed.txt file holds all the scenarios which are failed during execution
+            "rerun:target/failed.txt" }
 )
 public class SmokeRunner {
 }
